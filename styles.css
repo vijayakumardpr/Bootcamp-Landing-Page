@@ -226,3 +226,34 @@ textarea {
   border-radius: 0.5em;
   font-size: inherit;
 }
+
+@media (max-width: 700px) {
+  .full-screen-header {
+    background-position-x: 65%;
+  }
+
+  .curriculum-grid {
+    display: grid;
+    grid-template-columns: minmax(auto, 450px);
+    row-gap: 30px;
+  }
+
+  .pricing-cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-card:first-child,
+  .pricing-card:last-child {
+    border-radius: 0.3em;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  }
+
+  .feature {
+    text-align: center;
+  }
+  .feature.inactive {
+    display: none;
+  }
+}
